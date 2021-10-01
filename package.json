@@ -1,0 +1,22 @@
+{
+  "name": "week-4-coding-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsaylor/dom-project-wk4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlsaylor/dom-project-wk4/issues"
+  },
+  "homepage": "https://github.com/wlsaylor/dom-project-wk4#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}

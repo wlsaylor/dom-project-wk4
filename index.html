@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>TODO List</title>
+</head>
+
+<body class="container p-5">
+    <div class="row justify-content-center">
+        <div class="col-6 text-center">
+            <h1 class="mb-4">Pantry Expiration Dates</h1>
+        </div>
+    </div>
+
+    <table id="list" class="table table-hover table-striped table-light m-1">
+        <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Date Added</th>
+            <th scope="col">Expiration Date</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Controls</th>
+        </tr>
+    </table>
+
+    <div class="card m-3">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Exipration Date</label>
+                        <input type="date" class="form-control" id="new-expiration-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">Quantity</label>
+                        <input type="number" class="form-control" id="new-quantity">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row mt-3">
+                <div class="col-sm">
+                    <div class="form-floating">
+                        <input type="text" placeholder="Item" class="form-control" id="new-item">
+                        <label for="new-task">Item</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add" class="btn btn-success">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
