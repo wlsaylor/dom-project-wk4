@@ -11,50 +11,55 @@
 </head>
 
 <body class="container p-5">
-    <div class="row justify-content-center">
-        <div class="col-6 text-center">
-            <h1 class="mb-4">Pantry Expiration Dates</h1>
+
+    <header class="row justify-content-center mb-3">
+        <div class="col-8 m-2 p-2 rounded-pill d-flex justify-content-center bg-light text-center shadow">
+            <h1>Pantry Expiration Dates</h1>
         </div>
-    </div>
+    </header>
 
-    <table id="list" class="table table-hover table-striped table-light m-1">
-        <tr>
-            <th scope="col">Item</th>
-            <th scope="col">Date Added</th>
-            <th scope="col">Expiration Date</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Controls</th>
-        </tr>
-    </table>
+    <div class="row justify-content-center">
 
-    <div class="card m-3">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-start-date">Exipration Date</label>
-                        <input type="date" class="form-control" id="new-expiration-date">
+        <div class="card col-md-11 col-lg-5 m-3 shadow">
+            <div class="card-body rounded">
+                <div class="form-row mt-3">
+                    <div class="col-sm">
+                        <div class="form-floating mb-3">
+                            <input type="text" placeholder="Item" class="form-control" id="new-item">
+                            <label for="new-task">Item</label>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-end-date">Quantity</label>
-                        <input type="number" class="form-control" id="new-quantity">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="mb-3">
+                            <label for="new-start-date">Exipration Date</label>
+                            <input type="date" class="form-control" id="new-expiration-date">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="mb-3">
+                            <label for="new-end-date">Quantity</label>
+                            <input type="number" class="form-control" id="new-quantity">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-row mt-3">
-                <div class="col-sm">
-                    <div class="form-floating">
-                        <input type="text" placeholder="Item" class="form-control" id="new-item">
-                        <label for="new-task">Item</label>
-                    </div>
+                <div>
+                    <button id="create" class="btn btn-success">Create</button>
                 </div>
             </div>
-            <br>
-            <div>
-                <button id="add" class="btn btn-success">Create</button>
-            </div>
+        </div>
+
+        <div class="col-lg-6 m-3">
+            <table id="list" class="table table-hover table-light table-striped table-bordered text-center shadow">
+                <tr class>
+                    <th scope="col">Item</th>
+                    <th scope="col">Date Added</th>
+                    <th scope="col">Expiration Date</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Controls</th>
+                </tr>
+            </table>
         </div>
     </div>
 

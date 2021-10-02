@@ -1,0 +1,21 @@
+body {
+    background-color:rgb(194, 255, 168);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+    background-image: url("media/ehud-neuhaus-sHRw6n0nLRw-unsplash.jpg"); /* Photo by Ehud Neuhaus on Unsplash https://unsplash.com/@paramir */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+
+@media screen and (min-width: 990px) {
+    .card {
+        max-height: 243px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+    .card {
+        max-height: 330px;
+    }
+}
